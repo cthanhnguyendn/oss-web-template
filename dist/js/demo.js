@@ -337,4 +337,4 @@
     }
 
   }
-})(jQuery, $.AdminLTE);
+})(jQuery, $.OSS);

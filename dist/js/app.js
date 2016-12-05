@@ -19,20 +19,20 @@ if (typeof jQuery === "undefined") {
 /* AdminLTE
  *
  * @type Object
- * @description $.AdminLTE is the main object for the template's app.
+ * @description $.OSS is the main object for the template's app.
  *              It's used for implementing functions and options related
  *              to the template. Keeping everything wrapped in an object
  *              prevents conflict with other plugins and is a better
  *              way to organize our code.
  */
-$.AdminLTE = {};
+$.OSS = {};
 
 /* --------------------
  * - AdminLTE Options -
  * --------------------
  * Modify these options to suit your implementation
  */
-$.AdminLTE.options = {
+$.OSS.options = {
   //Add slimscroll to navbar menus
   //This requires you to load the slimscroll plugin
   //in every page before app.js
@@ -146,25 +146,25 @@ $(function () {
   //Extend options if external options exist
   if (typeof AdminLTEOptions !== "undefined") {
     $.extend(true,
-      $.AdminLTE.options,
+      $.OSS.options,
       AdminLTEOptions);
   }
 
   //Easy access to options
-  var o = $.AdminLTE.options;
+  var o = $.OSS.options;
 
   //Set up the object
   _init();
 
   //Activate the layout maker
-  $.AdminLTE.layout.activate();
+  $.OSS.layout.activate();
 
   //Enable sidebar tree view controls
-  $.AdminLTE.tree('.sidebar');
+  $.OSS.tree('.sidebar');
 
   //Enable control sidebar
   if (o.enableControlSidebar) {
-    $.AdminLTE.controlSidebar.activate();
+    $.OSS.controlSidebar.activate();
   }
 
   //Add slimscroll to navbar dropdown
@@ -178,7 +178,7 @@ $(function () {
 
   //Activate sidebar push menu
   if (o.sidebarPushMenu) {
-    $.AdminLTE.pushMenu.activate(o.sidebarToggleSelector);
+    $.OSS.pushMenu.activate(o.sidebarToggleSelector);
   }
 
   //Activate Bootstrap tooltip
@@ -190,7 +190,7 @@ $(function () {
 
   //Activate box widget
   if (o.enableBoxWidget) {
-    $.AdminLTE.boxWidget.activate();
+    $.OSS.boxWidget.activate();
   }
 
   //Activate fast click
@@ -233,11 +233,11 @@ function _init() {
    * Fixes the layout height in case min-height fails.
    *
    * @type Object
-   * @usage $.AdminLTE.layout.activate()
-   *        $.AdminLTE.layout.fix()
-   *        $.AdminLTE.layout.fixSidebar()
+   * @usage $.OSS.layout.activate()
+   *        $.OSS.layout.fix()
+   *        $.OSS.layout.fixSidebar()
    */
-  $.AdminLTE.layout = {
+  $.OSS.layout = {
     activate: function () {
       var _this = this;
       _this.fix();
@@ -270,7 +270,7 @@ function _init() {
         }
 
         //Fix for the control sidebar height
-        var controlSidebar = $($.AdminLTE.options.controlSidebarOptions.selector);
+        var controlSidebar = $($.OSS.options.controlSidebarOptions.selector);
         if (typeof controlSidebar !== "undefined") {
           if (controlSidebar.height() > postSetWidth)
             $(".content-wrapper, .right-side").css('min-height', controlSidebar.height());
@@ -289,7 +289,7 @@ function _init() {
         window.console.error("Error: the fixed layout requires the slimscroll plugin!");
       }
       //Enable slimscroll for fixed layout
-      if ($.AdminLTE.options.sidebarSlimScroll) {
+      if ($.OSS.options.sidebarSlimScroll) {
         if (typeof $.fn.slimScroll != 'undefined') {
           //Destroy if it exists
           $(".sidebar").slimScroll({destroy: true}).height("auto");
@@ -309,12 +309,12 @@ function _init() {
    * Adds the push menu functionality to the sidebar.
    *
    * @type Function
-   * @usage: $.AdminLTE.pushMenu("[data-toggle='offcanvas']")
+   * @usage: $.OSS.pushMenu("[data-toggle='offcanvas']")
    */
-  $.AdminLTE.pushMenu = {
+  $.OSS.pushMenu = {
     activate: function (toggleBtn) {
       //Get the screen sizes
-      var screenSizes = $.AdminLTE.options.screenSizes;
+      var screenSizes = $.OSS.options.screenSizes;
 
       //Enable sidebar toggle
       $(document).on('click', toggleBtn, function (e) {
@@ -346,7 +346,7 @@ function _init() {
       });
 
       //Enable expand on hover for sidebar mini
-      if ($.AdminLTE.options.sidebarExpandOnHover
+      if ($.OSS.options.sidebarExpandOnHover
         || ($('body').hasClass('fixed')
         && $('body').hasClass('sidebar-mini'))) {
         this.expandOnHover();
@@ -354,7 +354,7 @@ function _init() {
     },
     expandOnHover: function () {
       var _this = this;
-      var screenWidth = $.AdminLTE.options.screenSizes.sm - 1;
+      var screenWidth = $.OSS.options.screenSizes.sm - 1;
       //Expand sidebar on hover
       $('.main-sidebar').hover(function () {
         if ($('body').hasClass('sidebar-mini')
@@ -386,11 +386,11 @@ function _init() {
    * tree view menu.
    *
    * @type Function
-   * @Usage: $.AdminLTE.tree('.sidebar')
+   * @Usage: $.OSS.tree('.sidebar')
    */
-  $.AdminLTE.tree = function (menu) {
+  $.OSS.tree = function (menu) {
     var _this = this;
-    var animationSpeed = $.AdminLTE.options.animationSpeed;
+    var animationSpeed = $.OSS.options.animationSpeed;
     $(document).off('click', menu + ' li a')
       .on('click', menu + ' li a', function (e) {
         //Get the clicked link and the next element
@@ -440,46 +440,26 @@ function _init() {
    * Adds functionality to the right sidebar
    *
    * @type Object
-   * @usage $.AdminLTE.controlSidebar.activate(options)
+   * @usage $.OSS.controlSidebar.activate(options)
    */
-  $.AdminLTE.controlSidebar = {
+  $.OSS.controlSidebar = {
     //instantiate the object
     activate: function () {
-      //Get the object
-      var _this = this;
-      //Update options
-      var o = $.AdminLTE.options.controlSidebarOptions;
-      //Get the sidebar
-      var sidebar = $(o.selector);
-      //The toggle button
-      var btn = $(o.toggleBtnSelector);
-
-      //Listen to the click event
-      btn.on('click', function (e) {
-        e.preventDefault();
-        //If the sidebar is not open
-        if (!sidebar.hasClass('control-sidebar-open')
-          && !$('body').hasClass('control-sidebar-open')) {
-          //Open the sidebar
-          _this.open(sidebar, o.slide);
-        } else {
-          _this.close(sidebar, o.slide);
-        }
-      });
-
-      //If the body has a boxed layout, fix the sidebar bg position
-      var bg = $(".control-sidebar-bg");
-      _this._fix(bg);
-
-      //If the body has a fixed layout, make the control sidebar fixed
-      if ($('body').hasClass('fixed')) {
-        _this._fixForFixed(sidebar);
-      } else {
-        //If the content height is less than the sidebar's height, force max height
-        if ($('.content-wrapper, .right-side').height() < sidebar.height()) {
-          _this._fixForContent(sidebar);
-        }
-      }
+        // oss menu
+        $(".oss-sidebar-menu.mini").hover(function(){
+            $(this).removeClass("mini")
+        },function () {
+            $(this).addClass("mini")
+        })
+        $("[menuid]").click(function(e){
+            e.preventDefault();
+            var id = $(this).attr("menuid");
+            $("[submenuid]").removeClass("active");
+            $("[submenuid="+id+"]").addClass("active");
+            $("[menuid]").removeClass("active");
+            $("[menuid="+id+"]").addClass("active");
+            $(".oss-sidebar-menu").addClass("mini")
+        });
     },
     //Open the control sidebar
     open: function (sidebar, slide) {
@@ -538,13 +518,13 @@ function _init() {
    * removing boxes from the screen.
    *
    * @type Object
-   * @usage $.AdminLTE.boxWidget.activate()
-   *        Set all your options in the main $.AdminLTE.options object
+   * @usage $.OSS.boxWidget.activate()
+   *        Set all your options in the main $.OSS.options object
    */
-  $.AdminLTE.boxWidget = {
-    selectors: $.AdminLTE.options.boxWidgetOptions.boxWidgetSelectors,
-    icons: $.AdminLTE.options.boxWidgetOptions.boxWidgetIcons,
-    animationSpeed: $.AdminLTE.options.animationSpeed,
+  $.OSS.boxWidget = {
+    selectors: $.OSS.options.boxWidgetOptions.boxWidgetSelectors,
+    icons: $.OSS.options.boxWidgetOptions.boxWidgetIcons,
+    animationSpeed: $.OSS.options.animationSpeed,
     activate: function (_box) {
       var _this = this;
       if (!_box) {
@@ -696,17 +676,17 @@ function _init() {
   'use strict';
 
   $.fn.activateBox = function () {
-    $.AdminLTE.boxWidget.activate(this);
+    $.OSS.boxWidget.activate(this);
   };
 
   $.fn.toggleBox = function () {
-    var button = $($.AdminLTE.boxWidget.selectors.collapse, this);
-    $.AdminLTE.boxWidget.collapse(button);
+    var button = $($.OSS.boxWidget.selectors.collapse, this);
+    $.OSS.boxWidget.collapse(button);
   };
 
   $.fn.removeBox = function () {
-    var button = $($.AdminLTE.boxWidget.selectors.remove, this);
-    $.AdminLTE.boxWidget.remove(button);
+    var button = $($.OSS.boxWidget.selectors.remove, this);
+    $.OSS.boxWidget.remove(button);
   };
 
 })(jQuery);

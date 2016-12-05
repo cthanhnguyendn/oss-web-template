@@ -68,3 +68,27 @@
 .negative{
   background-color: #f44336;
 }
+.main-search-box{
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+  .search-icon{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    i{
+      font-size: 24px;
+      color: #455a64;
+    }
+  }
+  input{
+    margin-left: 35px;
+  }
+  .form-control{
+    border: none;
+    font-size: 16px;
+    &:hover, &:active{
+      box-shadow: none;
+    }
+  }
+}

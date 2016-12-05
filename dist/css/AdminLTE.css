@@ -3552,6 +3552,31 @@ table.text-center th {
 .negative {
   background-color: #f44336;
 }
+.main-search-box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-search-box .search-icon {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.main-search-box .search-icon i {
+  font-size: 24px;
+  color: #455a64;
+}
+.main-search-box input {
+  margin-left: 35px;
+}
+.main-search-box .form-control {
+  border: none;
+  font-size: 16px;
+}
+.main-search-box .form-control:hover,
+.main-search-box .form-control:active {
+  box-shadow: none;
+}
 .checkbox-control {
   width: 20px;
   position: relative;

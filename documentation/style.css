@@ -44,22 +44,7 @@ ul {
   background-color: #ecf0f5;
   color: #000;
 }
-.page-header span::before,
-.page-header a::before {
-  content: '#';
-  font-size: 25px;
-  margin-right: 10px;
-  color: #3c8dbc;
-}
-.page-header:before,
-#components > h3:before {
-  display: block;
-  content: " ";
-  margin-top: -60px;
-  height: 60px;
-  visibility: hidden;
-  z-index: -10;
-}
+
 
 .lead {
   font-size: 18px;

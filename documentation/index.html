@@ -60,6 +60,7 @@
         .sample-side-bar .main-sidebar{
             position: absolute;
         }
+
     </style>
 </head>
 <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
@@ -115,6 +116,9 @@
                         <li><a href="#component-number-counter">Number Counter</a></li>
                         <li><a href="#component-universal">Universal Component</a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="#sidebar"><i class="fa fa-circle-o"></i>Sidebar Menu</a>
                 </li>
                 </li>
             </ul>
@@ -375,7 +379,7 @@
                                     <td>Checkbox</td>
                                     <td>
                                         <div class="checkbox-control">
-                                            <input type="checkbox" id="check-box-1"  name="check" checked />
+                                            <input type="checkbox" id="check-box-1" name="check" checked/>
                                             <label for="check-box-1"></label>
                                         </div>
                                     </td>
@@ -394,7 +398,7 @@
                                     <td>Radio</td>
                                     <td>
                                         <div class="radio-control">
-                                            <input type="radio" id="radio-1"  name="check" />
+                                            <input type="radio" id="radio-1" name="check"/>
                                             <label for="radio-1"></label>
                                         </div>
                                     </td>
@@ -510,7 +514,8 @@
                                     </td>
                                     <td>
                                         <div class="input-group">
-                                            <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+                                            <select class="form-control select2" multiple="multiple"
+                                                    data-placeholder="Select a State" style="width: 100%;">
                                                 <option>Alabama</option>
                                                 <option>Alaska</option>
                                                 <option>California</option>
@@ -1293,28 +1298,36 @@
                                             <td>John Doe</td>
                                             <td>11-7-2014</td>
                                             <td><span class="label label-success">Approved</span></td>
-                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                                doner.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><input class="minimal" type="checkbox"/>219</td>
                                             <td>Alexander Pierce</td>
                                             <td>11-7-2014</td>
                                             <td><span class="label label-warning">Pending</span></td>
-                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                                doner.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><input class="minimal" type="checkbox"/>657</td>
                                             <td>Bob Doe</td>
                                             <td>11-7-2014</td>
                                             <td><span class="label label-primary">Approved</span></td>
-                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                                doner.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><input class="minimal" type="checkbox"/>175</td>
                                             <td>Mike Doe</td>
                                             <td>11-7-2014</td>
                                             <td><span class="label label-danger">Denied</span></td>
-                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                                doner.
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -1487,7 +1500,8 @@
                             </div>
                             <div class="col-lg-10">
                                 <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#">Chương trình đang chạy <span class="counter selected">10</span></a></li>
+                                    <li class="active"><a href="#">Chương trình đang chạy <span
+                                            class="counter selected">10</span></a></li>
                                     <li><a href="#">Chương trình sắp chạy</a></li>
                                     <li><a href="#">Chương trình đã kết thúc</a></li>
                                 </ul>
@@ -1509,7 +1523,8 @@
                             </div>
                             <div class="col-lg-10">
                                 <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#">Chương trình đang chạy<span class="counter selected">10</span></a></li>
+                                    <li class="active"><a href="#">Chương trình đang chạy<span
+                                            class="counter selected">10</span></a></li>
                                     <li><a href="#">Chương trình sắp chạy</a></li>
                                     <li><a href="#">Chương trình đã kết thúc</a></li>
                                     <li class="action-button">
@@ -1538,7 +1553,8 @@
                             </div>
                             <div class="col-lg-10">
                                 <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#">Chương trình đang chạy <span class="counter selected">10</span></a></li>
+                                    <li class="active"><a href="#">Chương trình đang chạy <span
+                                            class="counter selected">10</span></a></li>
                                     <li><a href="#">Chương trình sắp chạy</a></li>
                                     <li><a href="#">Chương trình đã kết thúc</a></li>
                                     <li class="scroll-button">
@@ -2037,157 +2053,517 @@
                         </div>
                     </div>
                 </div>
-
+                <h3 id="compnent-tooltip">
+                    Tooltip
+                </h3>
+                <div class="box box-solid">
+                    <div class="box-body">
+                        <div class="row margin">
+                            <div class="col-xs-6">
+                                <table class="table table-bordered text-center table-input-example">
+                                    <thead>
+                                    <tr>
+                                        <th>Preview</th>
+                                        <th>Code</th>
+                                        <th>Code</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="tool-tip-preview">
+                                                <div class=""></div>
+                                                <div class="tooltip fade top in">
+                                                    <div class="tooltip-arrow" style="left: 50%;"></div>
+                                                    <div class="tooltip-inner">Tooltip</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-copy" data-toggle="tooltip" title="Tooltip"><i
+                                                    class="fa fa-remove" aria-hidden="true"></i>Cancel
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <pre class="prettyprint">
+            &lt;button class=&quot;btn btn-copy&quot; data-toggle=&quot;tooltip&quot; title=&quot;Tooltip&quot;&gt;&lt;i
+                     class=&quot;fa fa-remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Cancel
+            &lt;/button&gt;
+                                            </pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="tool-tip-preview">
+                                                <div class="positive-tooltip"></div>
+                                                <div class="tooltip fade top in">
+                                                    <div class="tooltip-arrow" style="left: 50%;"></div>
+                                                    <div class="tooltip-inner">Tooltip</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-copy positive-tooltip" data-toggle="tooltip" title="Tooltip"><i
+                                                    class="fa fa-remove" aria-hidden="true"></i>Cancel
+                                            </button>
+                                        </td>
+                                        <td>
+                                             <pre>
+            &lt;button class=&quot;btn btn-copy positive-tooltip&quot; data-toggle=&quot;tooltip&quot;
+                 title=&quot;Tooltip&quot;&gt;&lt;i
+                 class=&quot;fa fa-remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Cancel
+            &lt;/button&gt;
+                                            </pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="tool-tip-preview">
+                                                <div class="error-tooltip"></div>
+                                                <div class="tooltip fade top in">
+                                                    <div class="tooltip-arrow" style="left: 50%;"></div>
+                                                    <div class="tooltip-inner">Tooltip</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-copy error-tooltip" data-toggle="tooltip" title="Tooltip"><i
+                                                    class="fa fa-remove" aria-hidden="true"></i>Cancel
+                                            </button>
+                                        </td>
+                                        <td>
+                                             <pre class="prettyprint">
+            &lt;button class=&quot;btn btn-copy error-tooltip&quot; data-toggle=&quot;tooltip&quot; title=&quot;Tooltip&quot;&gt;&lt;i
+                 class=&quot;fa fa-remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Cancel
+            &lt;/button&gt;
+                                            </pre>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </section>
-        <div class="sample-side-bar">
-            <aside class="oss-main-sidebar">
-                <!-- sidebar: style can be found in sidebar.less -->
-                <section class="oss-sidebar">
-                    <!-- sidebar menu: : style can be found in oss-sidebar.less -->
-                    <ul class="oss-sidebar-menu">
-                        <li class="header">GÓC CỦA TÔI</li>
-                        <li class="active treeview">
-                            <a href="#">
-                                <span class="menu-icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </span>
-                                <span class="">GÓC CỦA TÔI</span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li class="active">
-                                    <a href="#">
-                                        Bản tin
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="i#">
-                                        Lịch làm việc
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="i#">
-                                        Hộp thư
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="i#">
-                                        Task
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="i#">
-                                        Chấm công
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="i#">
-                                        Nhóm của tôi
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="i#">
-                                        Phiếu phê duyệt
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>BÁO CÁO</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>CHANEL</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>BÁN HÀNG TẠI CỬA HÀNG</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>BÁN HÀNG ONLINE</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>KHO HÀNG</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>QUẢN LÝ BÁN HÀNG</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>KHUYỄN MÃI</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>CÔNG TY</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>QUẢN LÝ NHÂN SỰ</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>QUẢN LÝ LƯƠNG THƯỞNG</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>THIẾT LẬP</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>KẾ TOÁN</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i>
-                                    <span>QUẢN LÝ NGƯỜI DÙNG</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <!-- /.sidebar -->
-            </aside>
-        </div>
+            <section id="sidebar" data-spy="scroll" data-target="#sidebar-menu">
+                <h2 class="page-header" ><a href="#sidebar">Sidebar Menu</a></h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sample-side-bar">
+                            <aside class="oss-main-sidebar">
+                                <!-- sidebar: style can be found in sidebar.less -->
+                                <section class="oss-sidebar">
+                                    <!-- sidebar menu: : style can be found in oss-sidebar.less -->
+                                    <ul class="oss-sidebar-menu mini">
+                                        <li class="head">
+                                            <span class="small-logo">OSS</span>
+                                            <span class="logo">SeedCom</span>
+                                            <i class="fa fa-caret-down"></i>
+                                        </li>
+                                        <li class="add-action">
+                                            <div class="btn-group">
+                                                <button class="btn btn-add dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="fa fa-plus"></i>
+                                                    <span class="text">TẠO MỚI</span>
+                                                    <span class="small-icon">
+                                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li>Tạo đơn hàng online</li>
+                                                    <li>Tạo đơn cửa hàng</li>
+                                                    <li>Phiếu nghỉ phép</li>
+                                                    <li>Phiếu chuyển kho</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="active treeview" menuid=1>
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="menu-text">GÓC CỦA TÔI</span>
+                                            </a>
+                                            <ul class="treeview-menu">
+                                                <li class="active">
+                                                    <a href="#">
+                                                        Bản tin
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Lịch làm việc
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Hộp thư
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Task
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Chấm công
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Nhóm của tôi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Phiếu phê duyệt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="treeview" menuid=2>
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">BÁO CÁO</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">CHANEL</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">BÁN HÀNG TẠI CỬA HÀNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">BÁN HÀNG ONLINE</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-archive" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">KHO HÀNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ BÁN HÀNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-gift" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">KHUYỄN MÃI</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">CÔNG TY</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ NHÂN SỰ</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ LƯƠNG THƯỞNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">THIẾT LẬP</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="menu-text">KẾ TOÁN</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ NGƯỜI DÙNG</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="oss-slide-submenu">
+                                        <li submenuid=1 class="active">
+                                            <a href="#">GÓC CỦA TÔI</a>
+                                            <ul>
+                                                <li href="#">Bảng tin </li>
+                                                <li href="#">Lịch làm việc</li>
+                                                <li href="#">Hộp thư</li>
+                                                <li href="#">task</li>
+                                                <li href="#">Chấm công</li>
+                                                <li href="#">Nhóm của tôi</li>
+                                                <li href="#">Phiếu phê duyệt</li>
+                                            </ul>
+                                        </li>
+                                        <li submenuid=2>
+                                            <a href="#">Báo cáo</a>
+                                            <ul>
+                                                <li href="#">Nhóm báo cáo </li>
+                                                <li href="#">Oracle BL</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <!-- /.sidebar -->
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sample-side-bar">
+                            <aside class="oss-main-sidebar mini">
+                                <!-- sidebar: style can be found in sidebar.less -->
+                                <section class="oss-sidebar">
+                                    <!-- sidebar menu: : style can be found in oss-sidebar.less -->
+                                    <ul class="oss-sidebar-menu mini">
+                                        <li class="head">
+                                            <span class="small-logo">OSS</span>
+                                            <span class="logo">SeedCom</span>
+                                            <i class="fa fa-caret-down"></i>
+                                        </li>
+                                        <li class="add-action">
+                                            <div class="btn-group">
+                                                <button class="btn btn-add dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="fa fa-plus"></i>
+                                                    <span class="text">TẠO MỚI</span>
+                                                    <span class="small-icon">
+                                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li>Tạo đơn hàng online</li>
+                                                    <li>Tạo đơn cửa hàng</li>
+                                                    <li>Phiếu nghỉ phép</li>
+                                                    <li>Phiếu chuyển kho</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="active treeview" menuid=1>
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="menu-text">GÓC CỦA TÔI</span>
+                                            </a>
+                                            <ul class="treeview-menu">
+                                                <li class="active">
+                                                    <a href="#">
+                                                        Bản tin
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Lịch làm việc
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Hộp thư
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Task
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Chấm công
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Nhóm của tôi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="i#">
+                                                        Phiếu phê duyệt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="treeview" menuid=2>
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">BÁO CÁO</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">CHANEL</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">BÁN HÀNG TẠI CỬA HÀNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">BÁN HÀNG ONLINE</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-archive" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">KHO HÀNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                 <span class="menu-icon">
+                                                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ BÁN HÀNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-gift" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">KHUYỄN MÃI</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">CÔNG TY</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ NHÂN SỰ</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ LƯƠNG THƯỞNG</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">THIẾT LẬP</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="menu-text">KẾ TOÁN</span>
+                                            </a>
+                                        </li>
+                                        <li class="treeview">
+                                            <a href="#">
+                                                <span class="menu-icon">
+                                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                                </span>
+                                                <span  class="menu-text">QUẢN LÝ NGƯỜI DÙNG</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="oss-slide-submenu">
+                                        <li submenuid=1 class="active">
+                                            <a href="#">GÓC CỦA TÔI</a>
+                                            <ul>
+                                                <li href="#">Bảng tin </li>
+                                                <li href="#">Lịch làm việc</li>
+                                                <li href="#">Hộp thư</li>
+                                                <li href="#">task</li>
+                                                <li href="#">Chấm công</li>
+                                                <li href="#">Nhóm của tôi</li>
+                                                <li href="#">Phiếu phê duyệt</li>
+                                            </ul>
+                                        </li>
+                                        <li submenuid=2>
+                                            <a href="#">Báo cáo</a>
+                                            <ul>
+                                                <li href="#">Nhóm báo cáo </li>
+                                                <li href="#">Oracle BL</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <!-- /.sidebar -->
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
         </div><!-- /.content -->
     </div><!-- /.content-wrapper -->
 
@@ -2256,8 +2632,23 @@
         $('.datepicker').datepicker({
             autoclose: true
         });
-
-
+        // oss menu
+        $(".oss-sidebar-menu.mini").hover(function(){
+            $(this).removeClass("mini")
+        },function () {
+            $(this).addClass("mini")
+        })
+        $("[menuid]").click(function(e){
+            e.preventDefault();
+           var id = $(this).attr("menuid");
+           $("[submenuid]").removeClass("active");
+           $("[submenuid="+id+"]").addClass("active");
+           $("[menuid]").removeClass("active");
+           $("[menuid="+id+"]").addClass("active");
+            $(".oss-sidebar-menu").addClass("mini")
+        });
+        //tooltip
+//        $('[data-toggle="tooltip"]').tooltip();
     })
 </script>
 </body>

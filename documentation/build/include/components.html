@@ -234,7 +234,7 @@
                         <td>Checkbox</td>
                         <td>
                             <div class="checkbox-control">
-                                <input type="checkbox" id="check-box-1"  name="check" checked />
+                                <input type="checkbox" id="check-box-1" name="check" checked/>
                                 <label for="check-box-1"></label>
                             </div>
                         </td>
@@ -253,7 +253,7 @@
                         <td>Radio</td>
                         <td>
                             <div class="radio-control">
-                                <input type="radio" id="radio-1"  name="check" />
+                                <input type="radio" id="radio-1" name="check"/>
                                 <label for="radio-1"></label>
                             </div>
                         </td>
@@ -369,7 +369,8 @@
                         </td>
                         <td>
                             <div class="input-group">
-                                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+                                <select class="form-control select2" multiple="multiple"
+                                        data-placeholder="Select a State" style="width: 100%;">
                                     <option>Alabama</option>
                                     <option>Alaska</option>
                                     <option>California</option>
@@ -1152,28 +1153,36 @@
                                 <td>John Doe</td>
                                 <td>11-7-2014</td>
                                 <td><span class="label label-success">Approved</span></td>
-                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                    doner.
+                                </td>
                             </tr>
                             <tr>
                                 <td><input class="minimal" type="checkbox"/>219</td>
                                 <td>Alexander Pierce</td>
                                 <td>11-7-2014</td>
                                 <td><span class="label label-warning">Pending</span></td>
-                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                    doner.
+                                </td>
                             </tr>
                             <tr>
                                 <td><input class="minimal" type="checkbox"/>657</td>
                                 <td>Bob Doe</td>
                                 <td>11-7-2014</td>
                                 <td><span class="label label-primary">Approved</span></td>
-                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                    doner.
+                                </td>
                             </tr>
                             <tr>
                                 <td><input class="minimal" type="checkbox"/>175</td>
                                 <td>Mike Doe</td>
                                 <td>11-7-2014</td>
                                 <td><span class="label label-danger">Denied</span></td>
-                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                <td class="reason">Bacon ipsum dolor sit amet salami venison chicken flank fatback
+                                    doner.
+                                </td>
                             </tr>
                             </tbody>
                         </table>
@@ -1346,7 +1355,8 @@
                 </div>
                 <div class="col-lg-10">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Chương trình đang chạy <span class="counter selected">10</span></a></li>
+                        <li class="active"><a href="#">Chương trình đang chạy <span
+                                class="counter selected">10</span></a></li>
                         <li><a href="#">Chương trình sắp chạy</a></li>
                         <li><a href="#">Chương trình đã kết thúc</a></li>
                     </ul>
@@ -1368,7 +1378,8 @@
                 </div>
                 <div class="col-lg-10">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Chương trình đang chạy<span class="counter selected">10</span></a></li>
+                        <li class="active"><a href="#">Chương trình đang chạy<span
+                                class="counter selected">10</span></a></li>
                         <li><a href="#">Chương trình sắp chạy</a></li>
                         <li><a href="#">Chương trình đã kết thúc</a></li>
                         <li class="action-button">
@@ -1397,7 +1408,8 @@
                 </div>
                 <div class="col-lg-10">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Chương trình đang chạy <span class="counter selected">10</span></a></li>
+                        <li class="active"><a href="#">Chương trình đang chạy <span
+                                class="counter selected">10</span></a></li>
                         <li><a href="#">Chương trình sắp chạy</a></li>
                         <li><a href="#">Chương trình đã kết thúc</a></li>
                         <li class="scroll-button">
@@ -1896,6 +1908,97 @@
             </div>
         </div>
     </div>
-
+    <h3 id="compnent-tooltip">
+        Tooltip
+    </h3>
+    <div class="box box-solid">
+        <div class="box-body">
+            <div class="row margin">
+                <div class="col-xs-6">
+                    <table class="table table-bordered text-center table-input-example">
+                        <thead>
+                        <tr>
+                            <th>Preview</th>
+                            <th>Code</th>
+                            <th>Code</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="tool-tip-preview">
+                                    <div class=""></div>
+                                    <div class="tooltip fade top in">
+                                        <div class="tooltip-arrow" style="left: 50%;"></div>
+                                        <div class="tooltip-inner">Tooltip</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-copy" data-toggle="tooltip" title="Tooltip"><i
+                                        class="fa fa-remove" aria-hidden="true"></i>Cancel
+                                </button>
+                            </td>
+                            <td>
+                                <pre class="prettyprint">
+&lt;button class=&quot;btn btn-copy&quot; data-toggle=&quot;tooltip&quot; title=&quot;Tooltip&quot;&gt;&lt;i
+         class=&quot;fa fa-remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Cancel
+&lt;/button&gt;
+                                </pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="tool-tip-preview">
+                                    <div class="positive-tooltip"></div>
+                                    <div class="tooltip fade top in">
+                                        <div class="tooltip-arrow" style="left: 50%;"></div>
+                                        <div class="tooltip-inner">Tooltip</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-copy positive-tooltip" data-toggle="tooltip" title="Tooltip"><i
+                                        class="fa fa-remove" aria-hidden="true"></i>Cancel
+                                </button>
+                            </td>
+                            <td>
+                                 <pre>
+&lt;button class=&quot;btn btn-copy positive-tooltip&quot; data-toggle=&quot;tooltip&quot;
+     title=&quot;Tooltip&quot;&gt;&lt;i
+     class=&quot;fa fa-remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Cancel
+&lt;/button&gt;
+                                </pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="tool-tip-preview">
+                                    <div class="error-tooltip"></div>
+                                    <div class="tooltip fade top in">
+                                        <div class="tooltip-arrow" style="left: 50%;"></div>
+                                        <div class="tooltip-inner">Tooltip</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-copy error-tooltip" data-toggle="tooltip" title="Tooltip"><i
+                                        class="fa fa-remove" aria-hidden="true"></i>Cancel
+                                </button>
+                            </td>
+                            <td>
+                                 <pre class="prettyprint">
+&lt;button class=&quot;btn btn-copy error-tooltip&quot; data-toggle=&quot;tooltip&quot; title=&quot;Tooltip&quot;&gt;&lt;i
+     class=&quot;fa fa-remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Cancel
+&lt;/button&gt;
+                                </pre>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>

@@ -60,6 +60,7 @@
         .sample-side-bar .main-sidebar{
             position: absolute;
         }
+
     </style>
 </head>
 <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
@@ -116,6 +117,9 @@
                         <li><a href="#component-universal">Universal Component</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#sidebar"><i class="fa fa-circle-o"></i>Sidebar Menu</a>
+                </li>
                 </li>
             </ul>
         </div>
@@ -140,9 +144,23 @@
         <div class="content body">
 
             include "components.html"
-        <div class="sample-side-bar">
-            include "sidebar.html"
-        </div>
+            <section id="sidebar" data-spy="scroll" data-target="#sidebar-menu">
+                <h2 class="page-header" ><a href="#sidebar">Sidebar Menu</a></h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sample-side-bar">
+                            include "sidebar.html"
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sample-side-bar">
+                            include "sidebar-mini.html"
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
         </div><!-- /.content -->
     </div><!-- /.content-wrapper -->
 
@@ -211,8 +229,23 @@
         $('.datepicker').datepicker({
             autoclose: true
         });
-
-
+        // oss menu
+        $(".oss-sidebar-menu.mini").hover(function(){
+            $(this).removeClass("mini")
+        },function () {
+            $(this).addClass("mini")
+        })
+        $("[menuid]").click(function(e){
+            e.preventDefault();
+           var id = $(this).attr("menuid");
+           $("[submenuid]").removeClass("active");
+           $("[submenuid="+id+"]").addClass("active");
+           $("[menuid]").removeClass("active");
+           $("[menuid="+id+"]").addClass("active");
+            $(".oss-sidebar-menu").addClass("mini")
+        });
+        //tooltip
+//        $('[data-toggle="tooltip"]').tooltip();
     })
 </script>
 </body>

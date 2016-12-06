@@ -6,7 +6,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
       // If any .less file changes in directory "build/less/" run the "less"-task.
-      files: ["build/less/*.less", "build/less/skins/*.less", "dist/js/app.js", "documentation/build/*.html","documentation/build/include/*.html"],
+      files: ["build/bootstrap-less/*.less","build/bootstrap-less/mixins/*.less","build/less/*.less", "build/less/skins/*.less", "dist/js/app.js", "documentation/build/*.html","documentation/build/include/*.html"],
       tasks: ["less", "uglify", "includes"]
     },
     // "less"-task configuration
@@ -168,5 +168,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint', ['jshint', 'csslint', 'bootlint']);
 
   // The default task (running "grunt" in console) is "watch"
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['less','watch']);
 };

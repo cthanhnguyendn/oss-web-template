@@ -3683,7 +3683,7 @@ table.text-center th {
  */
 .oss-main-sidebar,
 .oss-left-side {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   min-height: 100%;
@@ -3697,41 +3697,7 @@ table.text-center th {
   -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
 }
-@media (max-width: 767px) {
-  .oss-main-sidebar,
-  .oss-left-side {
-    padding-top: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .oss-main-sidebar,
-  .oss-left-side {
-    -webkit-transform: translate(-250px, 0);
-    -ms-transform: translate(-250px, 0);
-    -o-transform: translate(-250px, 0);
-    transform: translate(-250px, 0);
-  }
-}
-@media (min-width: 768px) {
-  .sidebar-collapse .oss-main-sidebar,
-  .sidebar-collapse .oss-left-side {
-    -webkit-transform: translate(-250px, 0);
-    -ms-transform: translate(-250px, 0);
-    -o-transform: translate(-250px, 0);
-    transform: translate(-250px, 0);
-  }
-}
-@media (max-width: 767px) {
-  .sidebar-open .oss-main-sidebar,
-  .sidebar-open .oss-left-side {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
 .oss-sidebar {
-  padding-bottom: 10px;
   height: 100%;
 }
 .sidebar-form input:focus {
@@ -3800,6 +3766,7 @@ table.text-center th {
 .oss-sidebar-menu > li > a {
   padding: 0px;
   display: block;
+  height: 100%;
 }
 .oss-sidebar-menu > li > a > .fa,
 .oss-sidebar-menu > li > a > .glyphicon,
@@ -3861,6 +3828,7 @@ table.text-center th {
 .oss-sidebar-menu li.add-action .btn-add {
   border-radius: 20px;
   background-color: #b6ce25;
+  padding: 5px 7px;
 }
 .oss-sidebar-menu li.add-action .btn-add :first-child {
   margin-right: 10px;
@@ -3949,6 +3917,8 @@ table.text-center th {
 .oss-sidebar-menu.mini > li.add-action .btn-add,
 .oss-main-sidebar.mini .oss-sidebar-menu > li.add-action .btn-add {
   min-width: 0px;
+  width: 30px;
+  height: 30px;
 }
 .oss-sidebar-menu.mini > li.add-action .btn-add i,
 .oss-main-sidebar.mini .oss-sidebar-menu > li.add-action .btn-add i {
@@ -3969,7 +3939,7 @@ ul.oss-slide-submenu {
   top: 0;
   left: 75px;
   list-style: none;
-  padding: 20px;
+  padding: 20px 5px 20px 15px;
   color: #ffffff;
 }
 ul.oss-slide-submenu > li {
@@ -3989,6 +3959,11 @@ ul.oss-slide-submenu > li > ul {
 }
 ul.oss-slide-submenu > li > ul > li {
   padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+ul.oss-slide-submenu > li > ul > li > a {
+  color: #ffffff;
 }
 ul.oss-slide-submenu > li.active {
   display: inherit;
